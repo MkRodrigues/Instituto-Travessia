@@ -1,0 +1,11 @@
+Como organizar o código da página em CSS
+
+Global (reset, corpo da pagina, estilo padrão para parágrafos, listas, etc.)
+Cabeçalho da página
+Estrutura da página
+Estilos de títulos
+Estilos de texto
+Navegação
+Formulários
+Rodapé
+Extras ou Miscelâneas
