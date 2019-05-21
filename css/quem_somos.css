@@ -1,0 +1,93 @@
+/* ---------->>> GLOBAL <<<-----------*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  
+/* ---------->>> NAVBAR <<<-----------*/
+
+#menu{
+    display: flex;
+    position: fixed;
+    margin-top: 70px;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    /* border: solid 1px #8c92a2;  */
+    font-family: arial;
+    font-size: 11pt;
+    font-weight: 600;
+  }
+  
+  #menu ul{
+    list-style: none;
+    position: fixed;
+    background: #3852a7;
+  }
+  
+  #menu ul li{
+    width: 150px;
+    float: left; 
+  }
+  
+  #menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    /* border: solid 0.5px #8c92a2; */
+    /* background:rgba(203,199,203,0.70); */
+    color: #000000;
+  }
+  
+  #menu ul ul{
+    position: absolute;
+    visibility: hidden; 
+  }
+  
+  #menu ul li:hover ul{
+    visibility: visible;
+    color: #FFF;
+  }
+  
+  #menu a:hover{
+    background:rgba(1, 0, 236,0.30);
+    color: #FFF;
+  }
+  
+  #menu ul ul li{
+    float: none;
+    border-bottom: solid 1px #8c92a2;
+    background: rgba(71, 114, 230, 0.4)
+  }
+
+
+/* ---------->>> FOOTER <<<-----------*/
+
+#ft-container{
+    display: flex;
+    background: #8c92a2;
+    justify-content: center;
+  }
+  
+  #div-items{
+    justify-content: flex-end;
+    
+  }
+  .ft-item{
+    width: 30px;
+    height: 30px;  
+  }
+  
+  .ft-gps{
+    width: 150px;
+    height: 50px;
+    text-align: center;  
+  }
+  
+  .ft-gps img{
+    /* text-align: center; */
+  }

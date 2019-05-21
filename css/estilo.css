@@ -141,3 +141,30 @@
   height: 48vw;
   /* background: blueviolet; */
   }
+
+/* ---------->>> FOOTER <<<-----------*/
+
+#ft-container{
+  display: flex;
+  background: #8c92a2;
+  justify-content: center;
+}
+
+#div-items{
+  justify-content: flex-end;
+  
+}
+.ft-item{
+  width: 30px;
+  height: 30px;  
+}
+
+.ft-gps{
+  width: 150px;
+  height: 50px;
+  text-align: center;  
+}
+
+.ft-gps img{
+  /* text-align: center; */
+}
