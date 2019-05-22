@@ -25,12 +25,14 @@
 #menu ul{
   list-style: none;
   position: fixed;
-  background: #3852a7;
+  /* background: #3852a7; */
+  /* border-bottom: solid 1px #FFF; */
+  background-image: linear-gradient(-50deg, #0100EC, #FC5252);;
 }
 
 #menu ul li{
   width: 150px;
-  float: left; 
+  float: left;
 }
 
 #menu a {
@@ -40,7 +42,7 @@
   text-align: center;
   /* border: solid 0.5px #8c92a2; */
   /* background:rgba(203,199,203,0.70); */
-  color: #000000;
+  color: #FFF;
 }
 
 #menu ul ul{
@@ -56,12 +58,14 @@
 #menu a:hover{
   background:rgba(1, 0, 236,0.30);
   color: #FFF;
+  border-top: solid 1px #FFF;
+  border-bottom: solid 1px #FFF;
 }
 
 #menu ul ul li{
   float: none;
-  border-bottom: solid 1px #8c92a2;
-  background: rgba(71, 114, 230, 0.4)
+  /* border-bottom: solid 1px #FFF; */
+  background: rgba(252, 82, 82, 0.4);
 }
 
 
@@ -84,7 +88,7 @@
   width: 55px;  
   margin: auto 0;
   margin-left: 100px;
-  height: 100px;
+  height: auto;
   color: #FFF;
   font-size: 20pt;
 } 
@@ -92,46 +96,21 @@
 
 /* ---------->>> MAIN <<<-----------*/
 
-#container  {
+#container {
   display: flex;
-  flex-direction: column;
-  /* width: 100%;
-  height: 48vw;
-  background:#FFFF00; */
-}
-
-#sc-quemsomos{
+  flex-direction: row;
   width: 100%;
   height: 48vw;
+  background:rgba(131, 129, 129, 0.555);
 }
 
-#sc-quemsomos p{
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: 450px;
-  height: 80px;
-  float: left;
-  text-align: center;
-} 
-
-#sc-h2{
-  display: flex;
-  /* order: 2; */
-  width: 55px;  
-  margin: auto 0;
-  margin-left: 100px;
-  height: 100px;
-  color: #FFF;
-  font-size: 20pt;
-}
 
 /* ---------->>> MAIN <<<-----------*/
 
-#main{
+/* #main{
   width: 100%;
   height: 49vw;
-}
+} */
 
 
 /* ---------->>> APOIE <<<-----------*/
