@@ -193,14 +193,23 @@ li, a{
   width: 100%; 
   height: 10vw;
   background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+  justify-content: center;
+  /* align-items: center */
+}
+
+.footer-tamanho{
+  display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
+  width: 1200px;
+  height: auto; 
 }
 
 .footer-info{
   margin-left: 20px;
   padding: 10px;
   align-self: center;
+  color: #;
 
 }
 
@@ -225,7 +234,6 @@ footer img{
   height: 50px;
   justify-content: space-between;
   align-items: center;
-
   /* align-items: flex-end; */
 }
 
@@ -248,7 +256,33 @@ footer img{
   /* display: flex; */
   width: 300px ;
   height: 150px;
+  margin-right: 50px;
 }
 
+.email{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #FFF;
+}
 
+.telefone{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #FFF;
+   
+}
+.endereco{
+  display: flex;
+  padding: 5px;
+  color: #FFF;
+  padding: 5px;
+  /* justify-content: center; */
+  /* align-self: center;    */
+}
 
+.endereco a{
+  color: #FFF;
+  padding: 5px;
+}
