@@ -3,98 +3,115 @@
     <head>
         <meta charset="UTF-8">
         <title>Associação Travessia</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/matricula.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <script src=javascript/script.js></script>
     </head>
 
     <body>        
-        <header id="header-bg">
-         <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="quem_somos.html">Quem Somos</a></li>
-                    <li><a href="#">Atividades</a>
+            <header id="header-bg">
+                <div class="menu-logo">
+                    <img src="img/logo.jpg" alt="Logo principal" class="logo">                      
+                    <nav class="menu">
                         <ul>
-                            <li><a href="atividades_educacionais.html">Educacionais</a></li>
-                            <li><a href="atividades_artisticas.html">Artísticas</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="quem_somos.html">Quem Somos</a></li>
+                            <li><a href="#">Atividades</a>
+                                <ul class="menudropdown">
+                                    <li><a href="atividades_educacionais.html">Educacionais</a></li>
+                                    <li><a href="atividades_artisticas.html">Artísticas</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="portal_do_aluno.html">Portal do Aluno</a></li>
+                            <li><a href="eventos.html">Eventos</a></li>
+                            <li><a href="matricula.html">Matrícula</a></li>
+                            <li><a href="apoie.html">Apoie</a></li>
+                            <li><a href="visita.html">Visita</a></li>
                         </ul>
-                    </li>
-                    <li><a href="portal_do_aluno.html">Portal do Aluno</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="matricula.html">Matrícula</a></li>
-                    <li><a href="apoie.html">Apoie</a></li>
-                    <li><a href="visita.html">Visita</a></li>
-                </ul>
-            </nav>
-        </header>
-<main>
-    <div id="div-principal">
-        <section >
-        <h1>Matricula</h1>
-        </section>    
-      
-        <aside id="lateral">
-          <p>
-            Matrículas abertas para novos alunos.
-Entre em contato conosco para agendar uma conversa ,conhecer nossa metodologia de ensino e terapias para crianças, jovens e adultos especiais e caso haja interece fazer a inscrição.
-Todas as atividades são definidas e desenvolvidas a partir do acompanhamento da evolução dos alunos.
-          </p>
-        </aside>
-      </div>
-  <section class="photo">
-    <img src="img/infan1.jpg">
-    <img src="img/fundam1.jpg">
-    <img src="img/fundam2.jpg">
-    <img src="img/medio.jpg">
-    <img src="img/terap.jpg">
+                    </nav>
+                </div>
+            </header>
 
+        <main>
+            <section class="matricula-container" >
+                <h1>Matrícula</h1>
+                <p>Matrículas abertas para novos alunos. Entre em contato conosco para agendar uma conversa conhecer nossa metodologia de ensino e terapias para crianças, jovens e adultos especiais e caso haja interece fazer a inscrição. Todas as atividades são definidas e desenvolvidas a partir do acompanhamento da evolução dos alunos.</p>
+            </section>    
 
-  </section>
+            <!-- Aqui coloquei o arquivo em 100% da largura da página -->
+            <section id="photo-container">
+                <!-- Aqui coloquei uma largura menor ocupando somente as imagens para que elas fossem centralizadas no container acima  -->
+                <div class="photo-centralizado">
+                  
+                    <div class="linha-um"> <!-- Aqui coloquei três imagens para que pudesse aplicar o space-between entre todas, e também para que as imagens ficassem na mesma linha -->
+                        <div class="photo-info1">
+                            <img src="img/infan1.jpg">
+                            <p>Texto com os horários</p>
+                        </div>
+                        <div class="photo-info2"> <!-- Cada div englobando uma foto e um paragrafo para posterior alinhamento -->
+                            <img src="img/fundam1.jpg">
+                            <p>Texto com os horários</p>
+                        </div>
+                        <div class="photo-info3">
+                            <img src="img/fundam2.jpg">
+                            <p>Texto com os horários</p>
+                        </div>
+                    </div>
 
-</main>
-        
+                    <div class="linha-dois"> <!-- Aqui fiz o mesmo que na div acima, porém coloquei o space-evenly no css para que eles pudessem se alinhar de forma diferente OBS: Ambas as linhas possuem a mesma largura e estão alinhadas da mesma forma -->
+                        <div class="photo-info4">
+                            <img src="img/medio.jpg">
+                            <p>Texto com os horários</p>
+                        </div>
+                        <div class="photo-info5">
+                            <img src="img/terap.jpg">
+                            <p>Texto com os horários</p>
+                        </div>
+                    </div>
+
+            </section>
+        </main>
+
         <footer id="footer-bg">
-            <div class="footer-info">
-                <h2>Associação Travessia</h2>
-                <p>Conectando crianças limítrofes com o mundo.</p>
-            </div>
-    
-            <div class="footer-sociais">
-                <div class="footer-facebook">
-                    <img src="img/facebook.png" alt="logo facebook">
-                    <a href="#"></a>
+                <div class="footer-tamanho">
+                    <div class="footer-info">
+                        <h2>Associação Travessia</h2>
+                        <p>Conectando crianças limítrofes com o mundo.</p>
+                    </div>
+        
+                    <div class="footer-sociais">
+                        <div class="footer-facebook">                   
+                            <a href="https://www.facebook.com/assoctravessia/" target="_blank"> <img src="img/facebok.png" alt="logo facebook"></a>
+                        </div>
+        
+                        <div class="footer-insta">                   
+                            <a href="https://www.instagram.com/associacaotravessia/" target="_blank"> <img src="img/instagram.png" alt="logo instagram"></a>
+                        </div>
+        
+                        <div class="footer-twitter">                    
+                            <a href="https://twitter.com/assoctravessia" target="_blank"><img src="img/twitter.png" alt="logo twitter"></a>
+                        </div>            
+                    </div>
+        
+                    <div class="footer-contatos">
+                        <div class="email">
+                            <img src="img/email.png" alt="Logo email">
+                            <span>admin@associacaotravessia.org.br</span>
+                        </div>
+        
+                        <div class="telefone">
+                            <img src="img/telefone.png" alt="Logo telefone">
+                            <span>(11) 5093-9524</span>
+                        </div>
+        
+                        <div class="endereco">
+                            <img src="img/gps.png" alt="Logo Gps">
+                            <a href="https://www.google.com/maps/dir//associa%C3%A7%C3%A3o+travessia/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x94ce509300e4843b:0xed60d2845d75d147?sa=X&ved=2ahUKEwi12-Wd-rTiAhWZJrkGHVWhALQQ9RcwFXoECAsQEA" target="_blank">Encontre-nos</a>
+                        </div>
+        
+                    </div>
                 </div>
-    
-                <div class="footer-insta">
-                    <img src="img/instagram.png" alt="logo instagram">
-                    <a href="#"></a>
-                </div>
-    
-                <div class="footer-twitter">
-                    <img src="img/twitter.png" alt="logo twitter">
-                    <a href="#"></a>
-                </div>            
-            </div>
-    
-            <div class="footer-contatos">
-                <div class="email">
-                    <img src="img/email.png" alt="Logo email">
-                    <span>admin@associacaotravessia.org.br</span>
-                </div>
-    
-                <div class="telefone">
-                    <img src="img/telefone.png" alt="Logo telefone">
-                    <span>(11) 5093-9524</span>
-                </div>
-    
-                <div class="endereco">
-                    <img src="img/gps.png" alt="Logo Gps">
-                    <a href="">Encontre-nos</a>
-                </div>
-    
-            </div>
-        </footer>
-    
+            </footer>
+
     </body>
 </html>
