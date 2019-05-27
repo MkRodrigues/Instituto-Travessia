@@ -1,0 +1,250 @@
+/* ---------->>> RESET / GLOBAL <<<-----------*/
+
+body, h1, h2, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body{
+    font-family: 'Montserrat', Helvetica, Arial,  sans-serif;
+    color: #000000;
+  }
+  
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+  
+  li, a{
+    text-decoration: none;
+  }
+    
+  /* ---------->>> MENU <<<-----------*/
+  
+  #menu-bg{
+    display: flex;
+    width: 100%;
+    height: 20vw;
+    background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+  }
+  
+  .menu{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 90px;
+    width: 100%;
+    height: 50px;
+    font-size: 0.95em;
+  }
+  
+  .menu ul{
+    list-style: none;
+    position: absolute;
+    background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+  }
+  
+  .menu ul li{
+    width: 150px;
+    float: left;
+  }
+  
+  .menu a {
+    padding: 15px;
+    display: block;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  .menu ul ul{
+    position: absolute;
+    visibility: hidden; 
+  }
+  
+  .menu ul li:hover ul{
+    visibility: visible;
+    color: #FFF;
+  }
+  
+  .menu a:hover{    
+    color: #FFF;
+    border-top: solid 1px #FFF;
+    border-bottom: solid 1px #FFF;
+    background:rgba(1, 0, 236,0.30);
+  }
+  
+  .menu ul ul li{
+    float: none;
+    background: rgba(252, 82, 82, 0.4);
+  }
+  
+  /* ---------->>> LOGO <<<-----------*/
+  
+  .logo-container{
+    display: flex;
+    width: 100%;
+    height: 20vw;
+    justify-content: space-between;
+    margin-top: -20vw; 
+    align-items: flex-end;
+  }
+  
+  .logo-travessia{ 
+    width: 100px;
+    margin-top: -80px;
+    margin-left: 220px;
+  }
+  
+  .logo-travessia h2{
+    font-family: 'Euphoria Script', cursive;
+    font-size: 4.5em;
+    color: white;
+  }
+  
+  .img-um{
+    width: auto;
+    height: 400px; 
+    margin-bottom: -50px;
+  }
+  
+  .img-dois{
+    width: auto;
+    height: 200px;
+    margin-bottom: -60px;
+  }
+  
+  /* ---------->>> APOIE <<<----------*/
+  
+  main{
+    min-height: 900px;
+  }
+  .eventos-container{
+    display: flex;
+    margin-top: 100px;
+    width:1300px;
+    height:x;
+    justify-content: space-between;
+  
+  }
+  
+  .eventos-container h1{
+    font-size: 3.5em;
+    align-self: center;
+    padding: 10px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 300px;
+  }
+  
+  .eventos-container p{
+    width: 400px;
+    height: auto;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 80px;
+    align-self: center;
+  }
+  
+  /* ---------->>> FOOTER <<<-----------*/
+  
+  #footer-bg{
+    display: flex; 
+    width: 100%; 
+    height: 10vw;
+    background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+    justify-content: flex-end;
+  }
+  
+  .footer-tamanho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: auto; 
+  }
+  
+  .footer-info{
+    margin-left: 20px;
+    padding: 10px;
+    align-self: center;
+    color: #FFF;
+  
+  }
+  
+  .footer-info h2{
+    padding: 5px 0;
+    text-align: left;
+  }
+  
+  .footer-info p{
+    text-align: left;
+    padding: 5px 0;
+  }
+  
+  footer img{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-sociais{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-facebook{
+    padding: 5px;
+    margin-left: 5px;
+  }
+  
+  .footer-insta{
+    padding: 5px;
+    margin-left: 5px;
+  }
+  
+  .footer-twitter{
+    padding: 5px;
+    margin-left: 5px;
+  }
+  
+  .footer-contatos{
+    width: auto ;
+    height: auto;
+    margin-right: 50px;
+  }
+  
+  .email{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: #FFF;
+  }
+  
+  .telefone{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: #FFF;
+     
+  }
+  .endereco{
+    display: flex;
+    padding: 5px;
+    color: #FFF;
+    padding: 5px;
+  }
+  
+  .endereco a{
+    color: #FFF;
+    padding: 5px;
+  }
+  
+  .footer-contatos img{
+  padding-right: 5px;
+  }
+    
+    
