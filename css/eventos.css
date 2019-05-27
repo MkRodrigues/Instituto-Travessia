@@ -89,43 +89,40 @@ body, h1, h2, p{
     margin-top: -20vw; 
     align-items: flex-end;
   }
-  
-  .logo-travessia{ 
-    width: 100px;
-    margin-top: -80px;
-    margin-left: 220px;
-  }
-  
-  .logo-travessia h2{
+
+  .logo-travessia{
     font-family: 'Euphoria Script', cursive;
     font-size: 4.5em;
+    margin-left: 210px;
+    margin-top: -68px;
     color: white;
+    font-weight: 600;
+    position: absolute;
   }
-  
+    
   .img-um{
     width: auto;
-    height: 400px; 
-    margin-bottom: -50px;
+    height: 400px;
   }
   
   .img-dois{
     width: auto;
     height: 200px;
-    margin-bottom: -60px;
   }
   
-  /* ---------->>> APOIE <<<----------*/
+  /* ---------->>>  MAIN <<<----------*/
   
   main{
     min-height: 900px;
   }
+
   .eventos-container{
     display: flex;
-    margin-top: 100px;
-    width:1300px;
-    height:x;
+    margin: 0px 0 100px 0;
+    width:100%;
+    height: 70vh;
     justify-content: space-between;
-  
+    background: #e9ecef;
   }
   
   .eventos-container h1{
@@ -139,14 +136,135 @@ body, h1, h2, p{
   }
   
   .eventos-container p{
-    width: 400px;
+    width: 600px;
     height: auto;
     text-align: center;
     font-size: 1.2em;
     margin-right: 80px;
     align-self: center;
   }
-  
+
+  /* ---------->>>  CALENDÁRIO <<<----------*/
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+.calendario{
+  width: 30%;
+  margin: 0 auto;
+}
+.head-cal{
+  font-size: 1.2em;
+}
+
+.mes {
+  padding: 70px 25px;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+}
+
+.mes ul {
+  margin: 0;
+  padding: 0;
+}
+
+.mes ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.mes .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.mes .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.semana-container{
+  width: 100%;
+}
+
+.semana {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  background-color: #ddd;
+  justify-content: space-between;
+}
+
+.semana li {
+  /* display: inline-block; */
+  width: auto;
+  color: rgb(78, 75, 75);
+  text-align: center;
+}
+
+.dias {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.dias li {
+  display: inline-block;
+  width: 11.5%;
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.dias li .ativo {
+  padding: 7px;
+  font-weight: 500;
+  color: white !important;
+  border-radius: 5px;
+  background-image: linear-gradient(-50deg, #0100EC, #FC5252);  
+}
+
+.dias .desabilitado{
+  color: #b2b5b8;
+}
+
+.descritivo-container{
+  margin: 10px auto 100px;
+  flex-wrap: nowrap;
+  width: 400px;
+}
+
+.desc-dia{
+  display: flex;
+}
+
+.descritivo-container h2{
+  font-size: 1.3em;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.desc-dia span{
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5px 0px 5px 5px;
+  text-align: center;
+}
+
+.desc-dia p{
+  font-size: 0.95em;
+  text-align: center;
+  padding: 5px 0px 5px 5px;
+}
+
+
   /* ---------->>> FOOTER <<<-----------*/
   
   #footer-bg{
