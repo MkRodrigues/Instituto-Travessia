@@ -219,9 +219,17 @@ aside{
 hr{
   margin: 100px;
   }
+  .comentario h2{
+    display: flex;
+    justify-content: center;
+
+  }
    .coments{
      display: flex;
-     justify-content: space-between;
+     justify-content: center;
+     align-items: center;
+     width: 90%;
+     margin: 50px;
    }
 
   .coments img{
@@ -231,8 +239,21 @@ hr{
   }
 
   .coments p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
     
-    
+  }
+  .coments h5{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 100px;
+     justify-content:space-between; 
+     align-items: flex-end;
   }
 
 
