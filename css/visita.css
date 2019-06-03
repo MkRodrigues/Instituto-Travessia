@@ -171,10 +171,11 @@ text-align: center;
 }
 aside{
   display: flex;
- position: relative; 
+ position: absolute; 
   left: 570px;
   bottom:0px;
   margin: 1px;
+  align-items: center;
   margin-top: -370px;
 }
 #duvida{

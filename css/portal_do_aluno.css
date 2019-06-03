@@ -110,10 +110,10 @@ body, h1, h2, p{
       height: 200px;
     }  
   
-  /* ---------->>> APOIE <<<----------*/
+  /* ---------->>> Portal <<<----------*/
   
   main{
-    min-height: 900px;
+    min-height: 1300px;
   }
   .portal-container{
     display: flex;
@@ -142,7 +142,108 @@ body, h1, h2, p{
     margin-right: 80px;
     align-self: center;
   }
+
+  /* ---------->>> PAINEL <<<-----------*/
+
+
+.tab{
+  display: flex;
+    overflow: hidden;
+    border: 1px solid purple;
+    background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+justify-content: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Muda a cor do  background quando em hover */
+.tab button:hover {
+    background-color: #ddd;
+    font-weight: bold;
+    color: black;
+}
+
+/* Create an active/current tablink class
+.tab button.active {
+    background-color: #ccc;
+    color: black;
+    font-weight: bold;
+} */
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.paineltabs{
+  display: flex;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 380px;
+    top:810px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
+button.cbutton {
+    font-family: 'Montserrat', Helvetica,  sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 14px 8px;
+    cursor: pointer;
+    background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 0px solid #91998e;
+
+    -moz-box-shadow:
+    0px 0px 0px rgba(000,000,000,0.5),
+    inset 0px 0px 1px rgba(255,255,255,1);
+
+    -webkit-box-shadow:
+    0px 0px 0px rgba(000,000,000,0.5),
+    inset 0px 0px 1px rgba(255,255,255,1);
+    box-shadow:
+    0px 0px 0px rgba(000,000,000,0.5),
+    inset 0px 0px 1px rgba(255,255,255,1);
+    text-shadow:
+    0px -1px 0px rgba(000,000,000,0.4),
+    0px 1px 0px rgba(255,255,255,0.3);
+}
+
+h3{
+    padding: 10px;
+}
+
+.tablinks{
   
+  color: #FFF;
+}
+  .tabcontent img{
+  width: 650px;
+  height: 500px;
+    
+
+  }
   /* ---------->>> FOOTER <<<-----------*/
   
   #footer-bg{
