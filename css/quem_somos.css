@@ -32,26 +32,25 @@ li, a{
   
   .menu{
     display: flex;
-    margin-left: 60px;
-    margin-top: 90px;
+    margin-top: 280px;
     width: 100%;
     height: 50px;
-    font-size: 0.95em;
+    font-size: .95em;
   }
   
   .menu ul{
     list-style: none;
-    position: absolute;
+    margin: 0 auto;
     background-image: linear-gradient(-50deg, #0100EC, #FC5252);
   }
-  
+
   .menu ul li{
-    width: 150px;
+    width: 160px;
     float: left;
   }
   
   .menu a {
-    padding: 15px;
+    padding: 16px;
     display: block;
     text-align: center;
     color: #FFF;
@@ -64,14 +63,11 @@ li, a{
   
   .menu ul li:hover ul{
     visibility: visible;
-    color: #FFF;
+    /* color: #FFF; */
   }
   
   .menu a:hover{    
-    color: #FFF;
-    border-top: solid 1px #FFF;
-    border-bottom: solid 1px #FFF;
-    background:rgba(1, 0, 236,0.30);
+    font-weight: 600;
   }
   
   .menu ul ul li{
@@ -85,7 +81,7 @@ li, a{
     display: flex;
     width: 100%;
     height: 20vw;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: -20vw; 
     align-items: flex-end;
   }
@@ -93,7 +89,7 @@ li, a{
   .logo-travessia{
     font-family: 'Euphoria Script', cursive;
     font-size: 4.5em;
-    margin-left: 210px;
+    margin-left: 450px;
     margin-top: -68px;
     color: white;
     font-weight: 600;
@@ -116,21 +112,20 @@ li, a{
   display: flex;
   width: 1300px;
   flex-wrap: wrap;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: 100px auto;
+  margin-top: 150px;
   justify-content: center;
 }
 
-.historia-intro, .nossoEsp-container{
+.historia-intro, .nEspaco-container{
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 300px;
-  background: #e9ecef;
-  margin: 35px 0 ;
+  margin: 50px 0;
 }
 
-.historia-intro h1, .nossoEsp-container h1 {
+.historia-intro h1, .nEspaco-container h1 {
   font-size: 3.5em;
   max-width: 300px;
   align-self: center;
@@ -140,7 +135,7 @@ li, a{
   margin-left: 50px;
 }
 
-.historia-intro p{
+.historia-intro p, .nEspaco-p{
   width: 500px;
   height: auto;
   font-size: 1.2em;
@@ -149,73 +144,17 @@ li, a{
   margin-right: 50px;
 }
 
-.artigos-historia{
-  margin-top: 35px;
-  width: 95%;
-  align-self: center;
-}
-
 .info-instituicao p, .info-alunos p, .info-objetivo p{
   font-size: 1.2em;
   padding: 5px 0 15px 0; 
 }
 
-.nossoEsp-container{
-  width: 100%;
-  height: 500px;
-  background: #e9ecef;
-}
-
-.botao {
-  display: inline-block;
-  border-radius: 4px;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 1.2em;
-  padding: 20px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  vertical-align: middle;
-  background-image: linear-gradient(-50deg, #0100EC, #FC5252);
-  border-radius: 50px;
-}
-
-.botao span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.botao span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.botao:hover span {
-  padding-right: 25px;
-}
-
-.botao:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-/* ---------->>> imagens por equanto <<<-----------*/
+/* ---------->>> GALERIA <<<-----------*/
 
 .galeria-container img{
-  width: 300px;
-  height: 300px;
-  
+  width: 250px;
+  height: 250px;
 }
-
 
 /* ---------->>> FOOTER <<<-----------*/
 
