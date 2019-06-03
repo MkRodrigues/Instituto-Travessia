@@ -167,11 +167,11 @@ text-align: center;
 }
 aside{
   display: flex;
- position: relative; 
-  left: 570px;
+ position: absolute; 
+  left: 670px;
   bottom:0px;
   margin: 1px;
-  margin-top: -370px;
+  top: 515px;
 }
 #duvida{
   margin: 10px;
