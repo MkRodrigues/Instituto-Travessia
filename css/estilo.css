@@ -87,16 +87,36 @@ li, a{
   color: #FFF;
 }
 
-.menu a:hover{    
+/* .menu a:hover{    
   color: #FFF;
   border-top: solid 1px #FFF;
   border-bottom: solid 1px #FFF;
   background:rgba(1, 0, 236,0.30);
+} */
+
+.menu a:hover{
+  border-top: 2px solid #FFF;
 }
 
 .menu ul ul li{
   float: none;
   background: rgba(252, 82, 82, 0.4);
+}
+
+/* ---------->>> LOGO <<<-----------*/
+  
+.logo-container{
+  display: flex;
+  width: 100%;
+  height: 20vw;
+  justify-content: flex-end;
+  margin-top: -20vw; 
+  align-items: flex-end;
+}
+
+.img-um{
+  width: auto;
+  height: 400px;
 }
 
 /* ---------->>> QUEM SOMOS <<<-----------*/
