@@ -106,7 +106,7 @@ body, h1, h2, p{
     height: 200px;
   }
   
-  /* ---------->>> APOIE <<<----------*/
+  /* ---------->>> Painel <<<----------*/
   
   main{
     min-height: 900px;
@@ -138,6 +138,130 @@ body, h1, h2, p{
     margin-right: 80px;
     align-self: center;
   }
+  /* ---------->>> galeria <<<-----------*/
+  .slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+list-style: none;
+position: absolute;
+}
+img{
+  height: 200px;
+  width: 200px;
+}
+.slider img {
+margin: auto;
+height:50%;
+width: 50%;
+vertical-align: top;
+opacity: 0;
+visibility: hidden;
+
+} 
+
+.slider input {
+display: none;
+}
+
+.slider label {
+    background-color:#000000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  top: 2%;
+   left: 2%;
+}
+
+.slider li:nth-child(2) label {
+  top: 2%;
+   left: 6%;
+}
+
+.slider li:nth-child(3) label {
+  top: 2%;
+  left: 10%;
+} 
+.slider li input:checked ~ img {
+       opacity: 1;
+     visibility: visible;
+    z-index: 10;
+ } 
+/* 2 */
+.slider2 {
+  display: block;
+  height: 293px;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.slider2 li {
+list-style: none;
+position: absolute;
+}
+img{
+height: 200px;
+width: 200px;
+}
+.slider2 img {
+margin: auto;
+height:50%;
+width: 50%;
+vertical-align: top;
+opacity: 0;
+visibility: hidden;
+
+} 
+
+.slider2 input {
+display: none;
+}
+
+.slider2 label {
+  background-color:#000000;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider li:nth-child(4) label {
+top: 2%;
+ left: 2%;
+}
+
+.slider li:nth-child(5) label {
+top: 2%;
+ left: 6%;
+}
+
+.slider li:nth-child(6) label {
+top: 2%;
+left: 10%;
+} 
+.slider2 li input:checked ~ img {
+     opacity: 1;
+   visibility: visible;
+  z-index: 10;
+} 
   
   /* ---------->>> FOOTER <<<-----------*/
   
