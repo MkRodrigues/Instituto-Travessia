@@ -155,8 +155,8 @@ main{
 
 /* ---------->>>  PARALLAX <<<----------*/
 
-/* .img-parallax{
-  background-image: url(../img/galeria-03.jpg);
+.img-parallax{
+  background-image: url(../img/parallax.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -166,36 +166,31 @@ main{
 }
 
 .section-parallax{
+  display: flex;
   margin: 100px 0;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   width: 100%;
   height: 70vh;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .h2-parallax{
   font-size: 3.5em;
   font-weight: 400;
   text-align: center;
-  color: #000000;
+  color: white;
 }
 
 .p-parallax{
-  font-size: 2em;
+  /* margin: auto 0; */
+  font-size: 1.5em;
   font-weight: 400;
   text-align: center;
-  color: #000000;
-}
-
-.parallax-sobreposicao{
-    top: 848px;
-    width: 100%;
-    height: 70%;
-    position: absolute;
-    background: rgba(0,0,0,.30);
-    z-index: 0;
-  } */
-  
+  color: white;
+}  
 
 /* ---------->>>  CALENDÁRIO <<<----------*/
 
