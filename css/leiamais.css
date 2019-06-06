@@ -2,7 +2,8 @@ body{
     padding: 0;
     margin: 0;
     background: rgba(0,0,0,.5);
-    font-family: verdana, arial , sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 #educacao-terapeutica, #terapia-social, #terapia-individual{
@@ -25,6 +26,15 @@ body{
     font-size: 1.05em;
     padding: 0 30px;
     text-align: justify;
+    text-indent: 50px;
+}
+
+#terapia-social ul{
+    list-style: none;
+    color: #444242;
+    margin-left: 100px;
+    padding: 10px 50px;
+    line-height: 1.5;
 }
 
 h1{
@@ -36,10 +46,15 @@ h1{
     padding: 30px;
 }
 
+span{
+   margin-left: 50px;
+}
+
 .btn-voltar{
-    position: absolute;
-    bottom: -40px;
-    right: -40px;
+    top: 10%;
+    position: fixed;
+    /* bottom: -40px; */
+    right: 5%;
     width: 60px;
     height: 60px;
     border-radius: 50%;

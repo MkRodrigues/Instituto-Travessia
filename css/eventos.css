@@ -22,17 +22,28 @@ li, a{
 }
   
 /* ---------->>> MENU <<<-----------*/
-
+  
 #menu-bg{
   display: flex;
   width: 100%;
   height: 20vw;
-  background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+  background-image: url(../img/01edited.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-sobreposicao{
+  top: 0;
+  width: 100%;
+  height: 20vw;
+  position: absolute; 
+  background: rgba(0,0,0,.30);
+  z-index: 0;   
 }
 
 .menu{
   display: flex;
-  margin-top: 280px;
+  margin-top: 21%;
   width: 100%;
   height: 50px;
   font-size: .95em;
@@ -63,7 +74,6 @@ li, a{
 
 .menu ul li:hover ul{
   visibility: visible;
-  /* color: #FFF; */
 }
 
 .menu a:hover{    
@@ -89,21 +99,24 @@ li, a{
 .logo-travessia{
   font-family: 'Euphoria Script', cursive;
   font-size: 4.5em;
-  margin-left: 450px;
+  margin-left: 33%;
   margin-top: -68px;
   color: white;
   font-weight: 600;
   position: absolute;
+  z-index: 1;
 }
   
 .img-um{
   width: auto;
   height: 400px;
+  z-index: 1;
 }
 
 .img-dois{
   width: auto;
   height: 200px;
+  z-index: 1;
 }
   
   /* ---------->>>  MAIN <<<----------*/
@@ -114,11 +127,10 @@ main{
 
 .eventos-container{
   display: flex;
-  margin: 0px 0 100px 0;
+  margin: 100px 0;
   width:100%;
   height: 60vh;
   justify-content: space-between;
-  background: #e9ecef;
 }
   
 .eventos-container h1{
@@ -127,7 +139,7 @@ main{
   padding: 10px;
   margin-left: 50px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   width: 300px;
 }
   
@@ -138,19 +150,28 @@ main{
   font-size: 1.2em;
   margin-right: 80px;
   align-self: center;
+  color: rgb(90, 90, 90);
 }
 
   /* ---------->>>  CALENDÁRIO <<<----------*/
-
 
 * {
   box-sizing: border-box;
 }
 
-.calendario{
-  width: 30%;
-  margin: 0 auto;
+#display{
+  display: flex;
+  width: 80%;
+  margin: 100px auto;
+  justify-content: space-around;
+  align-items: center;
+
 }
+
+.calendario{
+  width: 40%;
+}
+
 .head-cal{
   font-size: 1.2em;
 }
@@ -198,7 +219,6 @@ main{
 }
 
 .semana li {
-  /* display: inline-block; */
   width: auto;
   color: rgb(78, 75, 75);
   text-align: center;
@@ -233,8 +253,8 @@ main{
 }
 
 .descritivo-container{
-  margin: 10px auto 100px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  display: flex;
   width: 400px;
 }
 
@@ -260,23 +280,23 @@ main{
   padding: 5px 0px 5px 5px;
 }
 
+/* ---------->>> FOOTER <<<-----------*/
 
-  /* ---------->>> FOOTER <<<-----------*/
-  
 #footer-bg{
   display: flex; 
   width: 100%; 
-  height: 10vw;
+  min-height: 25%;
   background-image: linear-gradient(-50deg, #0100EC, #FC5252);
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .footer-tamanho{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 90%;
   height: auto; 
+  padding: 2%;
 }
 
 .footer-info{
@@ -284,17 +304,11 @@ main{
   padding: 10px;
   align-self: center;
   color: #FFF;
-
 }
 
-.footer-info h2{
+.footer-info h2, .footer-info p{
   padding: 5px 0;
   text-align: left;
-}
-
-.footer-info p{
-  text-align: left;
-  padding: 5px 0;
 }
 
 footer img{
@@ -310,46 +324,22 @@ footer img{
   align-items: center;
 }
 
-.footer-facebook{
+.footer-facebook, .footer-insta, .footer-twitter{
   padding: 5px;
   margin-left: 5px;
 }
 
-.footer-insta{
-  padding: 5px;
-  margin-left: 5px;
-}
-
-.footer-twitter{
-  padding: 5px;
-  margin-left: 5px;
-}
-  
 .footer-contatos{
   width: auto ;
   height: auto;
   margin-right: 50px;
 }
 
-.email{
+.email, .telefone, .endereco{
   display: flex;
+  padding: 5px;
+  color: #FFF;
   align-items: center;
-  padding: 5px;
-  color: #FFF;
-}
-
-.telefone{
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  color: #FFF;
-    
-}
-.endereco{
-  display: flex;
-  padding: 5px;
-  color: #FFF;
-  padding: 5px;
 }
 
 .endereco a{
@@ -358,7 +348,5 @@ footer img{
 }
 
 .footer-contatos img{
-padding-right: 5px;
+padding-right: 10px;
 }
-  
-  

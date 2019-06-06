@@ -1,127 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Associação Travessia</title>
-        <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Montserrat:400,500,600,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/portal_do_aluno.css">
-        <script src=javascript/script.js></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Associação Travessia</title>
+    <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/portal_do_aluno.css">
+    <script src=javascript/script.js></script>
+</head>
 
-    <body>        
-            <header id="header-bg">
-                <header id="menu-bg">
-                    <nav class="menu">
+<body>        
+    <header id="header-bg">
+        <header id="menu-bg">
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem_somos.html">Quem Somos</a></li>
+                    <li><a href="#">Atividades</a>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="quem_somos.html">Quem Somos</a></li>
-                            <li><a href="#">Atividades</a>
-                                <ul>
-                                    <li><a href="atividades_educacionais.html">Educacionais</a></li>
-                                    <li><a href="atividades_artisticas.html">Artísticas</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="portal_do_aluno.html">Portal do Aluno</a></li>
-                            <li><a href="eventos.html">Eventos</a></li>
-                            <li><a href="matricula.html">Matrícula</a></li>
-                            <li><a href="apoie.html">Apoie</a></li>
-                            <li><a href="visita.html">Visita</a></li>
+                            <li><a href="atividades_educacionais.html">Educacionais</a></li>
+                            <li><a href="atividades_artisticas.html">Artísticas</a></li>
                         </ul>
-                    </nav> 
-                </header>
-    
-                <div class="logo-container">                
-                        <img class="img-um" src="img/logo.png" alt="">
-                        <img class="img-dois"  src="img/logo2.png" alt="">                
-                    </div>
-                    <span class="logo-travessia">ravessia</span>
-       
-    <main>
-        <section class="portal-container" >
-            <h1>Grade Horária</h1>
+                    </li>
+                    <li><a href="portal_do_aluno.html">Portal do Aluno</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="matricula.html">Matrícula</a></li>
+                    <li><a href="apoie.html">Apoie</a></li>
+                    <li><a href="visita.html">Visita</a></li>
+                </ul>
+            </nav> 
+        </header>
+        
+        <div class="logo-container">                
+            <img class="img-um" src="img/logo.png" alt="">
+            <img class="img-dois"  src="img/logo2.png" alt="">                
+        </div>
+        <span class="logo-travessia">ravessia</span>
+        <div class="menu-sobreposicao"></div>
+        
+        <main>            
+            <div class="portal-info">
+                <h1>Grade Horária</h1>    
+                <p>Clique no botão de sua preferência para abrir o calendário com as informações de cada turma, sendo estes: calendário geral, horário de almoço; e horário das oficinas. </p>        
+            </div>
             
-        </section>  
-              </div>
-            </section>
             <section class="paineltabs">
-              <div class="tab">
-                <button class="tablinks" onclick="opendoe(event, 'geral')">Calendario Geral</button>
-                <button class="tablinks" onclick="opendoe(event, 'infan')">Jardim de Infancia</button>
-                <button class="tablinks" onclick="opendoe(event, 'fund1')">Fundamental l</button>
-                <button class="tablinks" onclick="opendoe(event, 'fund2')">Fundamental ll</button>
-                <button class="tablinks" onclick="opendoe(event, 'medio')">Ensino Medio</button>
-                <button class="tablinks" onclick="opendoe(event, 'social')">Terapia Social</button>
-                      </div>
-        
-              <div id="geral" class="tabcontent">
-                <img src="img/calendariog.jpg" alt="">
-              </div>
-        
-              <div id="infan" class="tabcontent">
-                <img src="img/fund2g.jpg" alt="">
-              </div>
-        
-              <div id="fund1" class="tabcontent">
-                <img src="img/fund1g.jpg" alt="">
-              </div>
-
-              <div id="fund2" class="tabcontent">
-                    <img src="img/fund2g.jpg" alt="">
+                <div class="tab">
+                    <button class="tablinks" onclick="opendoe(event, 'geral')">Calendário Geral</button>
+                    <button class="tablinks" onclick="opendoe(event, 'infan')">Jardim de Infância</button>
+                    <button class="tablinks" onclick="opendoe(event, 'fund1')">Fundamental l</button>
+                    <button class="tablinks" onclick="opendoe(event, 'fund2')">Fundamental ll</button>
+                    <button class="tablinks" onclick="opendoe(event, 'medio')">Ensino Médio</button>
+                    <button class="tablinks" onclick="opendoe(event, 'social')">Terapia Social</button>
+                </div>
                 
-              </div>
-
-              <div id="medio" class="tabcontent">
-                <img src="img/fund1g.jpg" alt="">
-              </div>
-
-              <div id="social" class="tabcontent">
-                <img src="img/fund2g.jpg" alt="">
-              </div>
-
-
-        
-                            
+                <div id="geral" class="tabcontent">
+                    <img src="img/calendariog.jpg" alt="">
+                </div>
+                
+                <div id="infan" class="tabcontent">
+                    <img src="img/fund2g.jpg" alt="">
+                </div>
+                
+                <div id="fund1" class="tabcontent">
+                    <img src="img/fund1g.jpg" alt="">
+                </div>
+                
+                <div id="fund2" class="tabcontent">
+                    <img src="img/fund2g.jpg" alt="">                    
+                </div>
+                
+                <div id="medio" class="tabcontent">
+                    <img src="img/fund1g.jpg" alt="">
+                </div>
+                
+                <div id="social" class="tabcontent">
+                    <img src="img/fund2g.jpg" alt="">
+                </div>
             </section>
-      </main>
-<footer id="footer-bg">
-    <div class="footer-tamanho">
-        <div class="footer-info">
-            <h2>Associação Travessia</h2>
-            <p>Conectando crianças limítrofes com o mundo.</p>
-        </div>
-
-        <div class="footer-sociais">
-            <div class="footer-facebook">                   
-                <a href="https://www.facebook.com/assoctravessia/" target="_blank"> <img src="img/facebok.png" alt="logo facebook"></a>
+        </main>
+        
+        <footer id="footer-bg">
+            <div class="footer-tamanho">
+                <div class="footer-info">
+                    <h2>Associação Travessia</h2>
+                    <p>Conectando crianças limítrofes com o mundo.</p>
+                </div>
+                
+                <div class="footer-sociais">
+                    <div class="footer-facebook">                   
+                        <a href="https://www.facebook.com/assoctravessia/" target="_blank"> <img src="img/facebok.png" alt="logo facebook"></a>
+                    </div>
+                    
+                    <div class="footer-insta">                   
+                        <a href="https://www.instagram.com/associacaotravessia/" target="_blank"> <img src="img/instagram.png" alt="logo instagram"></a>
+                    </div>
+                    
+                    <div class="footer-twitter">                    
+                        <a href="https://twitter.com/assoctravessia" target="_blank"><img src="img/twitter.png" alt="logo twitter"></a>
+                    </div>            
+                </div>
+                
+                <div class="footer-contatos">
+                    <div class="email">
+                        <img src="img/email.png" alt="Logo email">
+                        <span>admin@associacaotravessia.org.br</span>
+                    </div>
+                    
+                    <div class="telefone">
+                        <img src="img/telefone.png" alt="Logo telefone">
+                        <span>(11) 5093-9524</span>
+                    </div>
+                    
+                    <div class="endereco">
+                        <img src="img/gps.png" alt="Logo Gps">
+                        <a href="https://www.google.com/maps/dir//associa%C3%A7%C3%A3o+travessia/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x94ce509300e4843b:0xed60d2845d75d147?sa=X&ved=2ahUKEwi12-Wd-rTiAhWZJrkGHVWhALQQ9RcwFXoECAsQEA" target="_blank">Encontre-nos</a>
+                    </div>
+                    
+                </div>
             </div>
-
-            <div class="footer-insta">                   
-                <a href="https://www.instagram.com/associacaotravessia/" target="_blank"> <img src="img/instagram.png" alt="logo instagram"></a>
-            </div>
-
-            <div class="footer-twitter">                    
-                <a href="https://twitter.com/assoctravessia" target="_blank"><img src="img/twitter.png" alt="logo twitter"></a>
-            </div>            
-        </div>
-
-        <div class="footer-contatos">
-            <div class="email">
-                <img src="img/email.png" alt="Logo email">
-                <span>admin@associacaotravessia.org.br</span>
-            </div>
-
-            <div class="telefone">
-                <img src="img/telefone.png" alt="Logo telefone">
-                <span>(11) 5093-9524</span>
-            </div>
-
-            <div class="endereco">
-                <img src="img/gps.png" alt="Logo Gps">
-                <a href="https://www.google.com/maps/dir//associa%C3%A7%C3%A3o+travessia/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x94ce509300e4843b:0xed60d2845d75d147?sa=X&ved=2ahUKEwi12-Wd-rTiAhWZJrkGHVWhALQQ9RcwFXoECAsQEA" target="_blank">Encontre-nos</a>
-            </div>
-
-        </div>
-    </div>
-</footer>
-  </body>
-</html>
+        </footer>
+    </body>
+    </html>
