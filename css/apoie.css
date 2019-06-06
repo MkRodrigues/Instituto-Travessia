@@ -20,19 +20,30 @@ ul{
 li, a{
   text-decoration: none;
 }
-  
- /* ---------->>> MENU <<<-----------*/
-  
- #menu-bg{
+
+/* ---------->>> MENU <<<-----------*/
+
+#menu-bg{
   display: flex;
   width: 100%;
   height: 20vw;
-  background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+  background-image: url(../img/01edited.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-sobreposicao{
+  top: 0;
+  width: 100%;
+  height: 20vw;
+  position: absolute; 
+  background: rgba(0,0,0,.30);
+  z-index: 0;   
 }
 
 .menu{
   display: flex;
-  margin-top: 280px;
+  margin-top: 21%;
   width: 100%;
   height: 50px;
   font-size: .95em;
@@ -63,7 +74,6 @@ li, a{
 
 .menu ul li:hover ul{
   visibility: visible;
-  /* color: #FFF; */
 }
 
 .menu a:hover{    
@@ -89,170 +99,186 @@ li, a{
 .logo-travessia{
   font-family: 'Euphoria Script', cursive;
   font-size: 4.5em;
-  margin-left: 450px;
+  margin-left: 33%;
   margin-top: -68px;
   color: white;
   font-weight: 600;
   position: absolute;
+  z-index: 1;
 }
-  
+
 .img-um{
   width: auto;
   height: 400px;
+  z-index: 1;
 }
 
 .img-dois{
   width: auto;
   height: 200px;
+  z-index: 1;
 }
 
 /* ---------->>> APOIE <<<----------*/
 
 main{
-  min-height: 900px;
+  margin-top: 200px;
+  width: 100%;
+  height: 900px;
 }
+
 .apoie-container{
   display: flex;
-  margin-top: 100px;
-  width:1300px;
-  height:x;
+  width: 100%;
   justify-content: space-between;
-
 }
 
 .apoie-container h1{
   font-size: 3.5em;
-  align-self: center;
   padding: 10px;
   margin-left: 50px;
-  text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   width: 300px;
+  align-self: center;
+  text-transform: uppercase;
 }
 
 .apoie-container p{
-  width: 400px;
+  width: 600px;
   height: auto;
   text-align: center;
   font-size: 1.2em;
   margin-right: 80px;
   align-self: center;
+  color: rgb(90, 90, 90);
 }
 
 /* ---------->>> PAINEL <<<-----------*/
 
-
 .tab{
   display: flex;
-    overflow: hidden;
-    border: 1px solid purple;
-    background-image: linear-gradient(-50deg, #0100EC, #FC5252);
-justify-content: center;
+  overflow: hidden;
+  border: 1px solid purple;
+  background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+  justify-content: center;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
 }
 
 /* Muda a cor do  background quando em hover */
 .tab button:hover {
-    background-color: #ddd;
-    font-weight: bold;
-    color: black;
+  background-color: #ddd;
+  font-weight: bold;
+  color: black;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ccc;
-    color: black;
-    font-weight: bold;
+  background-color: #ccc;
+  color: black;
+  font-weight: bold;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
 
 .paineltabs{
   display: flex;
-    text-align: center;
-    width: 50%;
-    position: absolute;
-    left: 380px;
-    top:810px;
-    flex-direction: column;
-    justify-content: center;
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top:750px;
+  flex-direction: column;
+  justify-content: center;
 }
 
-h2{
-    text-align: center;
-    padding: 10px;
+.titulo-painel{
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
 }
 
 button.cbutton {
-    font-family: 'Montserrat', Helvetica,  sans-serif;
-    font-size: 14px;
-    color: #ffffff;
-    padding: 14px 8px;
-    cursor: pointer;
-    /* background: -moz-linear-gradient(top,#9ca89c 0%,#7f827e);
-    background: -webkit-gradient(linear, left top, left bottom,from(#9ca89c),to(#7f827e)); */
-    background-image: linear-gradient(-50deg, #0100EC, #FC5252);
-
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    border: 0px solid #91998e;
-
-    -moz-box-shadow:
-    0px 0px 0px rgba(000,000,000,0.5),
-    inset 0px 0px 1px rgba(255,255,255,1);
-
-    -webkit-box-shadow:
-    0px 0px 0px rgba(000,000,000,0.5),
-    inset 0px 0px 1px rgba(255,255,255,1);
-    box-shadow:
-    0px 0px 0px rgba(000,000,000,0.5),
-    inset 0px 0px 1px rgba(255,255,255,1);
-    text-shadow:
-    0px -1px 0px rgba(000,000,000,0.4),
-    0px 1px 0px rgba(255,255,255,0.3);
+  font-family: 'Montserrat',  sans-serif;  
+  font-size: 14px;
+  color:white;
+  padding: 14px 8px;
+  cursor: pointer;
+  background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+  
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 0px solid #91998e;
+  
+  -moz-box-shadow:
+  0px 0px 0px rgba(000,000,000,0.5),
+  inset 0px 0px 1px rgba(255,255,255,1);
+  
+  -webkit-box-shadow:
+  0px 0px 0px rgba(000,000,000,0.5),
+  inset 0px 0px 1px rgba(255,255,255,1);
+  box-shadow:
+  0px 0px 0px rgba(000,000,000,0.5),
+  inset 0px 0px 1px rgba(255,255,255,1);
+  text-shadow:
+  0px -1px 0px rgba(000,000,000,0.4),
+  0px 1px 0px rgba(255,255,255,0.3);
 }
 
 h3{
-    padding: 10px;
+  font-size: 1.7em;
+  font-family: 'Montserrat',  sans-serif;  
+  font-weight: 400;
 }
 
 .tablinks{
-  
+  font-family: 'Montserrat',  sans-serif;  
   color: #FFF;
 }
+
+.parag{
+  margin-top: 5px;
+}
+
+.parag p{
+  padding: 3px;
+}
+
 /* ---------->>> FOOTER <<<-----------*/
 
 #footer-bg{
   display: flex; 
   width: 100%; 
-  height: 10vw;
+  min-height: 25%;
   background-image: linear-gradient(-50deg, #0100EC, #FC5252);
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .footer-tamanho{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 90%;
   height: auto; 
+  padding: 2%;
 }
 
 .footer-info{
@@ -260,17 +286,11 @@ h3{
   padding: 10px;
   align-self: center;
   color: #FFF;
-
 }
 
-.footer-info h2{
+.footer-info h2, .footer-info p{
   padding: 5px 0;
   text-align: left;
-}
-
-.footer-info p{
-  text-align: left;
-  padding: 5px 0;
 }
 
 footer img{
@@ -286,17 +306,7 @@ footer img{
   align-items: center;
 }
 
-.footer-facebook{
-  padding: 5px;
-  margin-left: 5px;
-}
-
-.footer-insta{
-  padding: 5px;
-  margin-left: 5px;
-}
-
-.footer-twitter{
+.footer-facebook, .footer-insta, .footer-twitter{
   padding: 5px;
   margin-left: 5px;
 }
@@ -307,25 +317,11 @@ footer img{
   margin-right: 50px;
 }
 
-.email{
+.email, .telefone, .endereco{
   display: flex;
+  padding: 5px;
+  color: #FFF;
   align-items: center;
-  padding: 5px;
-  color: #FFF;
-}
-
-.telefone{
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  color: #FFF;
-   
-}
-.endereco{
-  display: flex;
-  padding: 5px;
-  color: #FFF;
-  padding: 5px;
 }
 
 .endereco a{
@@ -334,7 +330,5 @@ footer img{
 }
 
 .footer-contatos img{
-padding-right: 5px;
+  padding-right: 10px;
 }
-  
-  

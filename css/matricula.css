@@ -21,18 +21,29 @@ li, a{
   text-decoration: none;
 }
   
- /* ---------->>> MENU <<<-----------*/
+/* ---------->>> MENU <<<-----------*/
   
- #menu-bg{
+#menu-bg{
   display: flex;
   width: 100%;
   height: 20vw;
-  background-image: linear-gradient(-50deg, #0100EC, #FC5252);
+  background-image: url(../img/01edited.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-sobreposicao{
+  top: 0;
+  width: 100%;
+  height: 20vw;
+  position: absolute; 
+  background: rgba(0,0,0,.30);
+  z-index: 0;   
 }
 
 .menu{
   display: flex;
-  margin-top: 280px;
+  margin-top: 21%;
   width: 100%;
   height: 50px;
   font-size: .95em;
@@ -63,7 +74,6 @@ li, a{
 
 .menu ul li:hover ul{
   visibility: visible;
-  /* color: #FFF; */
 }
 
 .menu a:hover{    
@@ -89,21 +99,24 @@ li, a{
 .logo-travessia{
   font-family: 'Euphoria Script', cursive;
   font-size: 4.5em;
-  margin-left: 450px;
+  margin-left: 33%;
   margin-top: -68px;
   color: white;
   font-weight: 600;
   position: absolute;
+  z-index: 1;
 }
   
 .img-um{
   width: auto;
   height: 400px;
+  z-index: 1;
 }
 
 .img-dois{
   width: auto;
   height: 200px;
+  z-index: 1;
 }
 
 /* ---------->>> MATRÍCULA <<<----------*/
@@ -122,20 +135,21 @@ li, a{
   padding: 10px;
   margin-left: 50px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .matricula-container p{
-  width: 400px;
+  width: 600px;
   height: auto;
   text-align: center;
   font-size: 1.2em;
-  margin-right: 80px;
+  margin-right: 50px;
   align-self: center;
+  padding: 10px;
+  color: rgb(90, 90, 90);
 }
 
-
-/* ---------->>> PHOTO-CONTAINER <<<----------*/
+/* ---------->>> GALERIA <<<----------*/
 
 #photo-container{
   display: flex;
@@ -148,7 +162,7 @@ li, a{
 .photo-centralizado{
   display: flex;
   flex-wrap: wrap;
-  width: 1000px;
+  width: 70%;
   height: auto;
   align-items: center;
   justify-content: center;
@@ -158,36 +172,45 @@ li, a{
   width: 200px;
   height: 200px;
   align-self: center;
- 
+  border: 6px solid white;
+  box-shadow: 0 0 0 10px rgba(165, 165, 165, 0.144);
+  border-image: linear-gradient(-50deg, #0100EC, #FC5252);
+  border-image-slice: 1;
+}
+
+#photo-container h2{
+  padding: 10px;
+  font-size: .95em;
+  font-weight: 6  00;
+  text-transform: uppercase; 
 }
 
 .linha-um{
   display: flex;
   width: 100%;
   height: auto;
-  justify-content: space-between;
   text-align: center;
   margin: 30px;
+  padding: 30px 0;
+  justify-content: space-evenly;
 }
 
 .linha-dois{
   display: flex;
-  width: 100%;
+  width: 70%;
   height: auto;
   align-self: center;
-  justify-content: space-around;
-  margin: 30px;
   text-align: center;
-
+  padding: 30px 0;
+  justify-content: space-evenly;
 }
-
-    
+ 
 /* ---------->>> FOOTER <<<-----------*/
 
 #footer-bg{
   display: flex; 
   width: 100%; 
-  height: 10vw;
+  min-height: 25%;
   background-image: linear-gradient(-50deg, #0100EC, #FC5252);
   justify-content: center;
 }
@@ -196,8 +219,9 @@ li, a{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 90%;
   height: auto; 
+  padding: 2%;
 }
 
 .footer-info{
@@ -205,17 +229,11 @@ li, a{
   padding: 10px;
   align-self: center;
   color: #FFF;
-
 }
 
-.footer-info h2{
+.footer-info h2, .footer-info p{
   padding: 5px 0;
   text-align: left;
-}
-
-.footer-info p{
-  text-align: left;
-  padding: 5px 0;
 }
 
 footer img{
@@ -231,17 +249,7 @@ footer img{
   align-items: center;
 }
 
-.footer-facebook{
-  padding: 5px;
-  margin-left: 5px;
-}
-
-.footer-insta{
-  padding: 5px;
-  margin-left: 5px;
-}
-
-.footer-twitter{
+.footer-facebook, .footer-insta, .footer-twitter{
   padding: 5px;
   margin-left: 5px;
 }
@@ -252,25 +260,11 @@ footer img{
   margin-right: 50px;
 }
 
-.email{
+.email, .telefone, .endereco{
   display: flex;
+  padding: 5px;
+  color: #FFF;
   align-items: center;
-  padding: 5px;
-  color: #FFF;
-}
-
-.telefone{
-  display: flex;
-  align-items: center;
-  padding: 5px;
-  color: #FFF;
-   
-}
-.endereco{
-  display: flex;
-  padding: 5px;
-  color: #FFF;
-  padding: 5px;
 }
 
 .endereco a{
@@ -279,7 +273,5 @@ footer img{
 }
 
 .footer-contatos img{
-padding-right: 5px;
+padding-right: 10px;
 }
-  
-  
