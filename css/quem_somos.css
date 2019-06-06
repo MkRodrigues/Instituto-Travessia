@@ -139,7 +139,7 @@ li, a{
   color: rgb(90, 90, 90);
 }
 
-.historia-intro h1, .nEspaco-container h1 {
+.historia-intro h1, .nEspaco-container h2 {
   font-size: 3.5em;
   max-width: 300px;
   align-self: center;

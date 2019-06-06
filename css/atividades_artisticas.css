@@ -161,7 +161,7 @@ main{
   margin-top: 80px;
 }
 
-#geral p{
+.geral p{
   font-size: 1em;
   text-align: center;
   margin-top: -1%;
@@ -169,13 +169,13 @@ main{
   color: rgb(90, 90, 90);
 }
 
-#geral h2{
+.geral h2{
   font-size: 1.5em;
   text-align: center;
   font-weight: 400;
 }
 
-#geral{
+.geral{
   margin: 5%;
 }
 
