@@ -125,7 +125,7 @@ main{
   margin-top: 100px;
 }
 
-.agende-h2{
+.agende-h1{
   font-size: 3em;
   font-weight: 400;
   text-align: center;
@@ -148,15 +148,19 @@ form h2{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3em;
   font-weight: 400;
-  padding: 10px;
+  padding: 15px 0 5px 0;
 }
 .area{
+  font-family: 'Montserrat',sans-serif; 
+  padding: 4px;
   width: 400px;
   border-radius: 8px;
   height: 18px;
 }
 
 .duvida{
+  font-family: 'Montserrat',sans-serif; 
+  padding: 5px;
   border-radius: 8px; 
 }
 
@@ -167,26 +171,20 @@ form h2{
 .botao{
   display: flex;
   width: 100%;
-  height: 150px;
+  height: 120px;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
 .botao a{
-  /* margin: 0 auto; */
-  /* margin-top: 200px; */
-  /* margin-top: 10px; */
   margin: 0 auto;
   padding: 15px 30px ;
   text-align: center;    
   width: 100px;
-  /* h */
   background-image: linear-gradient(-50deg, #0100EC, #FC5252);
   border-radius: 50px;
   color: white;
   position: absolute;
-  /* right: 200px; */
-  /* bottom: -280px;   */
 }
 
 .botao a:hover{
@@ -197,43 +195,52 @@ form h2{
 /* ---------->>> COMENTÁRIOS <<<----------*/
 
 hr{
-  margin: 100px;
+  margin: 50px;
 }
-.comentario h2{
+
+#comentario{
   display: flex;
+  width: 100%;
   justify-content: center;
-  
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
 }
+
+.comentario-head h2{
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.comentario-head p{
+  text-align: center;
+  font-size: 1.3em;
+  color: rgb(90, 90, 90);
+  margin-bottom: 50px;
+}
+
 .coments{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  margin: 50px;
+  margin: 20px 0;
 }
 
 .coments img{
-  height:200px ;
-  width: 200px;
-  margin: 20px;
+  width: 170px;
+  height: 170px;
 }
 
 .coments p{
-  display: flex;
-  flex-wrap: wrap;
-  width: 600px;
-  height: 300px;
-  justify-content: center;
-  align-items: center;
-  
-}
-.coments h5{
-  display: flex;
-  flex-wrap: wrap;
-  width: 400px;
-  height: 100px;
-  justify-content:space-between; 
-  align-items: flex-end;
+  font-size: 1em;
+  text-align: center;
+  width:500px;
+  color: rgb(90, 90, 90);
+  margin: 10px 0;
 }
 
 /* ---------->>> FOOTER <<<-----------*/

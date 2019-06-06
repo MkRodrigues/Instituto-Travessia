@@ -20,9 +20,9 @@ ul{
 li, a{
   text-decoration: none;
 }
-  
+
 /* ---------->>> MENU <<<-----------*/
-  
+
 #menu-bg{
   display: flex;
   width: 100%;
@@ -106,7 +106,7 @@ li, a{
   position: absolute;
   z-index: 1;
 }
-  
+
 .img-um{
   width: auto;
   height: 400px;
@@ -118,9 +118,9 @@ li, a{
   height: 200px;
   z-index: 1;
 }
-  
-  /* ---------->>>  MAIN <<<----------*/
-  
+
+/* ---------->>>  MAIN <<<----------*/
+
 main{
   min-height: 900px;
 }
@@ -132,7 +132,7 @@ main{
   height: 60vh;
   justify-content: space-between;
 }
-  
+
 .eventos-container h1{
   font-size: 3.5em;
   align-self: center;
@@ -142,7 +142,7 @@ main{
   font-weight: 400;
   width: 300px;
 }
-  
+
 .eventos-container p{
   width: 600px;
   height: auto;
@@ -153,7 +153,51 @@ main{
   color: rgb(90, 90, 90);
 }
 
-  /* ---------->>>  CALENDÁRIO <<<----------*/
+/* ---------->>>  PARALLAX <<<----------*/
+
+/* .img-parallax{
+  background-image: url(../img/galeria-03.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding: 50px;
+}
+
+.section-parallax{
+  margin: 100px 0;
+  padding: 20px 0;
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+}
+
+.h2-parallax{
+  font-size: 3.5em;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+
+.p-parallax{
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+
+.parallax-sobreposicao{
+    top: 848px;
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    background: rgba(0,0,0,.30);
+    z-index: 0;
+  } */
+  
+
+/* ---------->>>  CALENDÁRIO <<<----------*/
 
 * {
   box-sizing: border-box;
@@ -165,7 +209,7 @@ main{
   margin: 100px auto;
   justify-content: space-around;
   align-items: center;
-
+  
 }
 
 .calendario{
@@ -348,5 +392,5 @@ footer img{
 }
 
 .footer-contatos img{
-padding-right: 10px;
+  padding-right: 10px;
 }
